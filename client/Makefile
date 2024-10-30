@@ -6,7 +6,7 @@ NAME = client
 
 all: $(NAME)
 
-$(NAME): $(SRC_DIR)/main.c
+$(NAME): $(SRC_DIR)/*.c
 	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
 
 clean:
