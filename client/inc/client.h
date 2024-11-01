@@ -5,5 +5,6 @@
 
 #include "../inc/libs.h"
 #include "../inc/login.h"
+#include "../inc/headerbar.h"
 
 #endif

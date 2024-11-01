@@ -43,7 +43,10 @@ void create_main_window(GtkApplication* app, gpointer user_data) {
     main_window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(main_window), "Mango-chat-main");
     gtk_window_set_default_size(GTK_WINDOW(main_window), MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT);
-    gtk_window_set_resizable(GTK_WINDOW(main_window), FALSE);
+    gtk_window_set_resizable(GTK_WINDOW(main_window), TRUE);
+
+    headbar_handler(main_window, "img/mango.png", "img/mango.png", "img/mango.png", 1);
+    import_css_theme("css/mango.css");
 
     main_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     gtk_container_add(GTK_CONTAINER(main_window), main_box);

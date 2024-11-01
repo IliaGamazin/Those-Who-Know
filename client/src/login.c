@@ -18,6 +18,9 @@ void create_login_window (GtkApplication* app, gpointer user_data) {
     gtk_window_set_default_size(GTK_WINDOW(login_window), LOGIN_WINDOW_WIDTH, LOGIN_WINDOW_HEIGHT);
     gtk_window_set_resizable(GTK_WINDOW(login_window), FALSE);
 
+    headbar_handler(login_window, "img/mango.png", "img/mango.png", "img/mango.png", 0);
+    import_css_theme("css/mango.css");
+
     login_box = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
     gtk_container_add(GTK_CONTAINER(login_window), login_box);
 
